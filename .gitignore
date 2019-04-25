@@ -6,3 +6,6 @@
 *.md
 *.html
 *.xml
+
+# include READMEs
+!README.md
