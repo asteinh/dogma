@@ -1,0 +1,180 @@
+body {
+  margin: 0;
+}
+
+/* HEADER */
+
+#dogma #header {
+  width: 100%;
+  height: 100px;
+  float: left;
+  background-color: #DDD;
+  position: relative;
+}
+#dogma #header .name {
+  margin-left: 1em;
+  height: 100px;
+  line-height: 100px;
+  display: block;
+  font-size: 2em;
+}
+#dogma #header .statistics {
+  display: block;
+  font-size: .75em;
+  position: absolute;
+  right: 1em;
+  bottom: 1em;
+  text-align: right;
+}
+#dogma .flex-row-container {
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  float: left;
+}
+
+/* TABLE OF CONTENTS */
+
+#dogma .flex-row-container #toc {
+  flex-basis: 250px;
+  flex-shrink: 0;
+  padding: 1em;
+  overflow-wrap: break-word;
+  background-color: #EEE;
+}
+#dogma .flex-row-container #toc .title {
+  display: block;
+  margin: auto;
+  font-weight: 400;
+  text-align: center;
+}
+#dogma .flex-row-container #toc ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+#dogma .flex-row-container #toc li {
+  padding-left: 1em;
+  padding-right: 5px;
+  text-indent: -1em;
+}
+
+/* CONTENT */
+
+#dogma .flex-row-container #content {
+  flex-grow: 1;
+  padding: 1em;
+}
+#dogma #footer {
+  width: 100%;
+  background-color: #DDD;
+  text-align: center;
+  font-size: 0.9em;
+  float: left;
+  padding: 1em 0;
+}
+#dogma pre {
+  font-family: monospace;
+  font-size: 0.8em;
+  overflow-x: hidden;
+}
+#dogma pre .line {
+  background: rgb(245, 245, 245);
+  padding: 0.1em 0;
+  overflow-x: hidden;
+}
+#dogma pre .line:nth-child(even) {
+  background: rgb(252, 252, 252);
+}
+#dogma pre .line:first-child {
+  padding-top: 1em;
+}
+#dogma pre .line:last-child {
+  padding-bottom: 1em;
+}
+#dogma pre .line .lineno {
+  width: 3em;
+  padding-right: 1em;
+  float: left;
+  text-align: right;
+  background: rgb(235, 235, 235);
+  color: rgb(150, 150, 150);
+}
+#dogma pre .line:nth-child(even) .lineno {
+  background: rgb(245, 245, 245);
+}
+#dogma pre .line code {
+  padding: 0 1em;
+  /* margin: 0; */
+  overflow-x: hidden;
+  background: inherit;
+}
+
+
+
+#dogma pre.long {
+  font-size: 1em;
+  padding: 0em;
+  background-color: inherit;
+  white-space: pre-wrap;       /* Since CSS 2.1 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+#dogma .icon-inherited {
+  color: #666;
+}
+
+/* PACKAGE OVERVIEW */
+
+#dogma #content .title {
+  font-weight: bold;
+}
+#dogma #content .list ul {
+  list-style: circle;
+}
+
+#dogma #content table.overview {
+  width: 100%;
+  font-family: monospace;
+  border-collapse: collapse;
+}
+#dogma #content table.overview .name,
+#dogma #content table.overview a.name {
+  font-weight: bold;
+  text-decoration: none;
+  color: inherit;
+}
+#dogma #content table.overview .muted {
+  color: #666;
+  font-family: serif;
+  font-size: 0.9em;
+}
+#dogma #content table.overview .details {
+  color: #666;
+  font-family: serif;
+  font-size: 0.75em;
+  line-height: 1rem;
+  vertical-align: top;
+  padding: 0 1em;
+}
+#dogma #content table.overview tr:nth-child(odd) {
+  background: #EEE;
+}
+#dogma #content table.overview tr td {
+  width: 100%;
+  vertical-align: top;
+  text-align: left;
+  padding: .5em;
+}
+#dogma #content table.overview tr td:nth-child(1) {
+  width: auto;
+  text-align: right;
+  word-break: keep-all;
+}
+#dogma #content table.overview.functions tr td:nth-child(2) {
+  width: auto;
+  text-align: right;
+  word-break: keep-all;
+}

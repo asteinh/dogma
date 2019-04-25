@@ -1,0 +1,8 @@
+# temporary files
+*.*~
+.DS_Store
+
+# dogma exports
+*.md
+*.html
+*.xml
